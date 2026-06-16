@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Taskly is a task management application that helps you organize your tasks and increase productivity.">
     <title>Taskly</title>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Taskly</h1>
+        <h1>Task.ly</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -20,8 +22,8 @@
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Download</a></li>
             </ul>
-            <button>Get Started</button>
         </nav>
+        <button>Get Started</button>
     </header>
 
     <main>
@@ -32,8 +34,8 @@
                 <p>Boosting Productivity and Achieving Goals</p>
             </div>
             <div class="hero-button">
-                <button>Learn More</button>
-                <button>Get Started</button>
+                <button id="1">Learn More</button>
+                <button id="2">Get Started</button>
             </div>
         </section>
 
@@ -41,19 +43,25 @@
             <h2>Key Features</h2>
             <dl class="feature-list">
                 <div class="feature-item">
-                    <dt><h3>Rich Asynchronous Communication</h3></dt>
-                    <dd><p>Allows team members to embed quick screen recordings and voice memos directly into tasks, making it easier to share complex context without needing live meetings.</p></dd>
-                    <img src="https://via.placeholder.com/400x200" alt="Asynchronous Communication Example" class="feature-image">
+                    <div>
+                        <dt><h3>Rich Asynchronous Communication</h3></dt>
+                        <dd><p>Allows team members to embed quick screen recordings and voice memos directly into tasks, making it easier to share complex context without needing live meetings.</p></dd>
+                    </div>
+                    <img src="./assets/feature-1.png" alt="Asynchronous Communication Example" class="feature-image">
                 </div>
                 <div class="feature-item">
-                    <dt><h3>Cross-Platform Compatibility</h3></dt>
-                    <dd><p>Access your tasks from any device, anywhere.</p></dd>
-                    <img src="https://via.placeholder.com/400x200" alt="Cross-Platform Compatibility Example" class="feature-image">
+                    <div>
+                        <dt><h3>Cross-Platform Compatibility</h3></dt>
+                        <dd><p>Access your tasks from any device, anywhere.</p></dd>
+                    </div>
+                    <img src="./assets/feature-2.png" alt="Cross-Platform Compatibility Example" class="feature-image">
                 </div>
                 <div class="feature-item">
-                    <dt><h3>Priority Management</h3></dt>
-                    <dd><p>Manage task priorities effectively to ensure you're always focusing on what's most important.</p></dd>
-                    <img src="https://via.placeholder.com/400x200" alt="Priority Management Example" class="feature-image">
+                    <div>
+                        <dt><h3>Priority Management</h3></dt>
+                        <dd><p>Manage task priorities effectively to ensure you're always focusing on what's most important.</p></dd>
+                    </div>
+                    <img src="./assets/feature-3.png" alt="Priority Management Example" class="feature-image">
                 </div>
             </dl>
         </section>
@@ -92,42 +100,51 @@
     <footer>
         <section class="cta">
             <h2>Ready to Boost Your Productivity?</h2>
-            <button id="app-store">Download Now</button>
-            <button id="ch-play">Download Now</button>
+            <div>
+                <button id="app-store">
+                    <i class="fab fa-apple"></i> Download Now
+                </button>
+                
+                <button id="ch-play">
+                    <i class="fab fa-google-play"></i> Download Now
+                </button>
+            </div>
         </section>
         <hr>
-        <section class="summary">
-            <h4>Taskly</h4>
-            <p>Boosting productivity and Achieving Goals</p>
-            <email>mail@taskly.com</email>
-        </section>
-        <section class="contact-info">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Home</th>
-                        <th>Features</th>
-                        <th>Social Media</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="#">About Us</a></td>
-                        <td><a href="#">Get Started</a></td>
-                        <td><a href="#">Instagram</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Download</a></td>
-                        <td><a href="#">Privacy Policy</a></td>
-                        <td><a href="#">LinkedIn</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Community</a></td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
+        <div class="footer-content">
+            <section class="summary">
+                <h4>Taskly</h4>
+                <p>Boosting productivity and Achieving Goals</p>
+                <email>mail@taskly.com</email>
+            </section>
+            <section class="contact-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Home</th>
+                            <th>Features</th>
+                            <th>Social Media</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">About Us</a></td>
+                            <td><a href="#">Get Started</a></td>
+                            <td><a href="#">Instagram</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Download</a></td>
+                            <td><a href="#">Privacy Policy</a></td>
+                            <td><a href="#">LinkedIn</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Community</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+            </section>
+        </div>
         
     </footer>
 
