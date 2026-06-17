@@ -25,9 +25,9 @@ a{
 
 button{
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 0.8vw;
   border: none;
-  padding:  1vw;
+  padding:  0.8vw;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -36,6 +36,7 @@ button:hover {
   opacity: 0.9;
   transform: scale(1.05); 
 }
+
 
 @media (max-width: 768px) {
   .hero-content h2 {
@@ -103,14 +104,14 @@ nav ul li a:hover {
 }
 
 .hero-content h2 {
-  font-size: 5vw;
+  font-size: 3.5vw;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 .hero-content p {
   color: var(--text-color);
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -137,7 +138,7 @@ nav ul li a:hover {
 }
 
 .features h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin-bottom: 20px;
 }
 
@@ -153,6 +154,15 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 25rem;
+}
+
+.feature-item img {
+  width: 100%;
+  flex-grow: 1;
+  min-height: 0;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .feature-item:hover, .testimonial-item:hover {
@@ -195,7 +205,7 @@ nav ul li a:hover {
 }
 
 .testimonials h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin-bottom: 20px;
 }
 
@@ -213,9 +223,11 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
   color: white;
   background-color: var(--text-color);
+
+  height: fit-content;
 }
 
 footer hr {
@@ -239,7 +251,7 @@ footer a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
+  padding: 20px 20px;
 }
 
 .cta div {
@@ -248,7 +260,7 @@ footer a{
   gap: 20px;
 }
 .cta h2{
-  font-size: 3vw;
+  font-size: 2.5vw;
   width: 50%;
   margin-bottom: 20px;
 }
@@ -269,11 +281,12 @@ th, td {
 }
 
 th {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-bottom: 20px; 
 }
 
 td {
+  font-size: 0.8rem;
   padding-bottom: 15px; 
 }
 
