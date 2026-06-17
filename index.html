@@ -17,16 +17,16 @@
         <h1>Task.ly</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="#">Download</a></li>
+                <li><a href="#download-buttons">Download</a></li>
             </ul>
         </nav>
         <button>Get Started</button>
     </header>
 
-    <main>
+    <main id="home">
         <section class="hero">
             <div class="hero-content">
                 <h2>Efficient Task</h2>
@@ -35,8 +35,15 @@
             </div>
             <div class="hero-button">
                 <button id="1">Learn More</button>
-                <button id="2">Get Started</button>
+                <button id="2"><a href="#download-buttons">Get Started</a></button>
             </div>
+        </section>
+
+        <section class="about">
+            <div>
+                <h2>About Taskly</h2>
+            </div>
+            <p>Taskly is a task management application designed to help individuals and teams organize their tasks, set priorities, and achieve their goals more efficiently. With a user-friendly interface and powerful features, Taskly makes task management simple and effective.</p>
         </section>
 
         <section class="features">
@@ -100,7 +107,7 @@
     <footer>
         <section class="cta">
             <h2>Ready to Boost Your Productivity?</h2>
-            <div>
+            <div id="download-buttons">
                 <button id="app-store">
                     <i class="fab fa-apple"></i> Download Now
                 </button>
