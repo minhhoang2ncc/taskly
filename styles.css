@@ -5,7 +5,7 @@
   --text-color: #333333;
   
   /* Responsive font sizes */
-  --font-size-h1: clamp(1.5rem, 5vw, 3.5rem);
+  --font-size-h1: clamp(1.25rem, 3.5vw, 2.5rem);
   --font-size-h2: clamp(1.25rem, 3.5vw, 2.5rem);
   --font-size-h3: clamp(1rem, 2.5vw, 1.5rem);
   --font-size-body: clamp(0.9rem, 2vw, 1.1rem);
@@ -21,6 +21,10 @@ body {
   margin: 0;
   padding: 0;
   font-size: var(--font-size-body);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
 ul {
@@ -483,6 +487,16 @@ main {
 }
 
 /* Footer Section */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--text-color); */
+  /* width: 100%; */
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+
 footer{
   display: flex;
   flex-direction: column;
@@ -491,7 +505,8 @@ footer{
   padding: 40px 20px;
   color: white;
   background-color: var(--text-color);
-  width: 100%;
+  border-radius: 20px 20px 0 0;
+  width: 1200px;
 }
 
 footer hr {
