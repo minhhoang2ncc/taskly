@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,10 +24,30 @@
                 <li><a href="#download-buttons">Download</a></li>
             </ul>
         </nav>
-        <button>Get Started</button>
+        <button commandfor="inputDialog" command="show-modal">Get Started</button>
     </header>
 
     <main id="home">
+        <!-- <section class="pop-up"> -->
+        <dialog id="inputDialog">
+            <button type="button" commandfor="inputDialog" command="close" class="dialog-close" aria-label="Close dialog">×</button>
+            <div>
+                <h1>Contact Us</h1>
+            </div>
+            <form id="popupForm">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Enter your message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </dialog>
+        <!-- </section> -->
+
         <section class="hero">
             <div class="hero-content">
                 <h2>Efficient Task</h2>
@@ -35,7 +56,7 @@
             </div>
             <div class="hero-button">
                 <button id="1">Learn More</button>
-                <button id="2"><a href="#download-buttons">Get Started</a></button>
+                <button commandfor="inputDialog" command="show-modal" id="2">Get Started</button>
             </div>
         </section>
 
