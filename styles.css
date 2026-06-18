@@ -160,6 +160,12 @@ dialog button:hover {
   background-color: #2844b8;
 }
 
+dialog button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
 #responseMessage {
   padding: 20px;
   background-color: #d4edda;

@@ -4,6 +4,7 @@ const email = form.elements['email'];
 const message = form.elements['message'];
 const dialogTitle = document.querySelector('#inputDialog div h1');
 const dialog = document.getElementById('inputDialog');
+const submitButton = form.querySelector('button[type="submit"]');
 const closeButton = document.querySelector('.dialog-close');
 
 const responseMessage = document.getElementById('responseMessage');
@@ -13,6 +14,7 @@ const link = "https://5f3e7a7d13a9640016a68c24.mockapi.io/api/key2";
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    submitButton.disabled = true;
     
     const payload = {
         name: name.value,
@@ -46,6 +48,7 @@ form.addEventListener('submit', (e) => {
         form.style.display = 'none';
         dialogTitle.style.display = 'none';
         closeButton.style.display = 'none';
+        submitButton.disabled = false;
 
         setTimeout(() => {
             dialog.close();
@@ -55,6 +58,6 @@ form.addEventListener('submit', (e) => {
             responseMessage.style.display = 'none';
             errorMessage.style.display = 'none'; 
             form.reset();
-        }, 2000);
+        }, 750);
     });
 });
