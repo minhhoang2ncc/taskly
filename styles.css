@@ -66,7 +66,7 @@ dialog {
   padding: 30px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   max-width: 90%;
-  width: 100%;
+  width: 40%;
   position: relative;
 }
 
@@ -96,14 +96,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background-image: linear-gradient(
-    45deg,
-    magenta,
-    rebeccapurple,
-    dodgerblue,
-    green
-  );
-  opacity: 0.75;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 dialog form {
@@ -122,6 +115,7 @@ dialog label {
 dialog form div {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 dialog div {
@@ -137,6 +131,7 @@ dialog textarea {
   font-family: 'Poppins', sans-serif;
   font-size: var(--font-size-body);
   transition: border-color 0.3s ease;
+  width: 100%;
 }
 
 dialog input:focus,
@@ -154,6 +149,9 @@ dialog textarea {
 dialog button {
   background-color: var(--primary-color);
   color: white;
+  width: 100%;
+  max-width: none;
+  padding: 10px 15px;
   margin-top: 10px;
 }
 
@@ -178,6 +176,7 @@ dialog button:hover {
   
   dialog {
     max-width: 95%;
+    width: 95%;
     padding: 20px;
   }
   
@@ -267,6 +266,10 @@ dialog button:hover {
 }
 
 @media (max-width: 768px) {
+  dialog{
+    max-width: 90%;
+    width: 90%;
+  }
   button{
     max-width: 100%;
   }
