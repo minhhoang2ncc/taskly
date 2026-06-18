@@ -108,7 +108,7 @@ dialog form {
 
 dialog label {
   font-weight: 500;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-small);
   color: var(--text-color);
   margin-bottom: 5px;
 }
@@ -130,7 +130,7 @@ dialog textarea {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-small);
   transition: border-color 0.3s ease;
   width: 100%;
 }
